@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-fix {
+  @apply fixed z-[9999]  px-4 py-2;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.x-transis {
+  @apply transition duration-500 ease-in-out;
+}
+
+.strip {
+  @apply w-[30px] h-[2px] my-2 block bg-blue-700;
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply w-[25px] h-[2px] my-2 block bg-blue-700;
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply w-[20px] h-[2px] my-2 block bg-blue-700;
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply w-[10px] h-[2px] my-2 block bg-blue-700;
+}
+.navbar {
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+.navbar.bg-scrolled {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-item {
+  display: none;
+}
+.carousel-item.active {
+  display: block;
+}
+.menu-item img {
+  border-radius: 50%;
+}
+.menu-item.blur-md {
+  filter: blur(8px);
+  pointer-events: none;
+}
+#menu-grid {
+  position: relative;
+  max-height: 600px;
+  overflow-y: auto;
+  padding-bottom: 100px; /* Ensure there's space for the gradient */
+}
+
+#swipe-more {
+  pointer-events: none; /* Ensure it doesn't interfere with scrolling */
+}
+
+#swipe-more span {
+  display: block;
+  margin-top: 20px;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 6));
+  }
+}
+.scrolling-wrapper {
+  display: flex;
+  animation: scroll 30s linear infinite;
+}
+.scrolling-wrapper:hover {
+  animation-play-state: paused;
+}
+.review-card {
+  flex: 0 0 auto;
+  width: 300px;
+  margin-right: 1rem;
+}
+#reservationPanel {
+  right: -320px; /* Adjust based on your panel width */
+  transition: transform 0.3s ease;
+}
+
+/* Show the panel when it is toggled */
+#reservationPanel.translate-x-0 {
+  transform: translateX(-100%);
+}
+@import url("https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");

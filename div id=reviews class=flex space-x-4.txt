@@ -1,0 +1,31 @@
+<div id="reviews" class="flex space-x-4 p-4 scroll-container">
+              <div class="card bg-white rounded-lg shadow-lg p-4 m-2 flex-shrink-0">
+                <h3 class="font-semibold">John Doe</h3>
+                <div class="flex items-center mb-2">
+                  <span class="text-yellow-500">★★★★☆</span>
+                </div>
+                <p class="text-gray-600">Great product! Highly recommended.</p>
+              </div>
+              <div class="card bg-white rounded-lg shadow-lg p-4 m-2 flex-shrink-0">
+                <h3 class="font-semibold">Jane Smith</h3>
+                <div class="flex items-center mb-2">
+                  <span class="text-yellow-500">★★★★★</span>
+                </div>
+                <p class="text-gray-600">Excellent quality and fast shipping!</p>
+              </div>
+              <div class="card bg-white rounded-lg shadow-lg p-4 m-2 flex-shrink-0">
+                <h3 class="font-semibold">Alex Johnson</h3>
+                <div class="flex items-center mb-2">
+                  <span class="text-yellow-500">★★★☆☆</span>
+                </div>
+                <p class="text-gray-600">Good value for the price.</p>
+              </div>
+              <div class="card bg-white rounded-lg shadow-lg p-4 m-2 flex-shrink-0">
+                <h3 class="font-semibold">Chris Lee</h3>
+                <div class="flex items-center mb-2">
+                  <span class="text-yellow-500">★★★★★</span>
+                </div>
+                <p class="text-gray-600">Outstanding experience, will buy again!</p>
+              </div>
+            </div>
+          </div>
